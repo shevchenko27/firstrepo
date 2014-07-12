@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">	
+    <title>My Site</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a href="My First Bootstrap.html" class="brand">Company</a>
+          <div class="collapse nav-collapse pull-right">
+            <ul class="nav">
+              <li class="active"><a href="products-single.html">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="" data-toggle="modal" data-target="#modal-contact-form">Contact Us</a></li>
+            </ul>
+            <form action="" class="navbar-search">
+              <input type="text" class="search-query" placeholder="search...">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div><!-- END NAVBAR -->
+      
+
+
+    <!--  MODAL CONTACT FORM   -->
+      <div class="modal hide fade" id="modal-contact-form">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal">&times;</button>
+          <h3>Contact Us</h3>
+        </div>
+        <div class="modal-body">
+          <form action="" class="form-horizontal">
+            <div class="control-group">
+              <label for="contact name" class="control-label">Name:</label>
+              <div class="controls">
+                <input type="text" id="contact-name">
+              </div>
+            </div>
+            <div class="control-group">
+              <label for="contact email" class="control-label">Email:</label>
+              <div class="controls">
+                <input type="email" id="contact-email">
+              </div>
+            </div>
+            <div class="control-group">
+              <label for="contact message" class="control-label">Message:</label>
+              <div class="controls">
+                <textarea name="contact-message" id="contact-message" cols="30" rows="10"></textarea>
+              </div>
+            </div>
+            <div class="control-groups">
+              <div class="controls">
+                <input type="submit" class="btn btn-primary" value="Send Message">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="" data-dismiss="modal" class="btn">Cancel</a>
+        </div>
+      </div> <!-- END MODAL -->
+
+      <!-- FUTERED PRODUCT -->
+    <section>
+      <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="span4">
+            <h1>Fitured Product</h1>
+            <p class="lead">How is music affected by text translation? How does music influence the translation of the text it sets? How is the sense of both the text and the music transferred in the translation process?</p>
+            <div class="btn-group">
+              <a href="" class="btn btn-info btn-large buttonL">Listen Now</a>
+              <a href="" class="btn btn-large">Buy Now</a>
+            </div>
+              <p><a href="">&laquo;Read more about the product &raquo;</a></p>
+          </div>
+          <div class="span8">
+            <img src="img/loud.jpg" alt="loud">
+          </div>
+        </div>
+      </div>
+      <hr />
+    </div><!-- END CONTAINER -->
+    </section>
+    
+   <div class="container"> 
+  <!--  COMPANY INFO  -->
+      <section>
+        <h3>Competitions Guide</h3>
+        <div class="row">
+          <div class="span8"> 
+            <p>Discover the range of classical music competitions in the UK and Internationally with our exclusive Competition Guide.This season, explore your love of music and expand your horizons with the BBC Music Magazine Performance Guide</p>
+            <p>The BBC Music Magazine Festivals Guide 2013 contains a wide range of classical music festivals to suit all tastes.</p>
+          </div>
+          <div class="span4">
+            <p class="well well-large lead text-center">Listen to a clip from this new four-star disc from the Bergen Philharmonic Orchestra</p>
+          </div>
+        </div>
+      </section><!-- ENS COMPANY INFO -->
+      <hr />
+    
+
+      <!-- TESTIMONIALS -->
+      <h3>Testimonials</h3>
+      <div class="carousel" id="testimonials">
+        <ol class="carousel-indicators">
+          <li data-target="#testimonials" data-slide-to="0" class="active"></li>
+          <li data-target="#testimonials" data-slide-to="1"></li>
+          <li data-target="#testimonials" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="item active">
+            <blockquote>
+              <p>This is testimonial 1</p>
+              <small>John</small>
+            </blockquote>
+          </div>
+          <div class="item">
+            <blockquote>
+              <p>This is testimonial 2</p>
+              <small>John</small>
+            </blockquote>
+          </div>
+          <div class="item">
+            <blockquote>
+              <p>This is testimonial 3</p>
+              <small>John</small>
+            </blockquote>
+          </div>
+        </div>
+      </div> 
+      <hr /> 
+
+      <!-- FOOTER -->
+      <section>
+        <p class="lead text-center">Wanna get in touch? Email as at <a href="">sheva2786@rambler.ru</a></p>
+      </section>
+      <hr />
+      <ul class="inline text-center">
+        <li><strong>Follow As On</strong></li>
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Vcontakte</a></li>
+      </ul>
+      <p class="text-center muted">&copy; Copyright 2013 Company Name</p>
+    </div>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+      $ (document) .ready (function(){
+          $ ('.carousel') .carousel ({
+                interval:5000
+          });  
+      });         
+    </script>
+  </body>
+</html>

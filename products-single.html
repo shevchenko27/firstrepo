@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">	
+    <title>My Site</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <a href="My First Bootstrap.html" class="brand">Company</a>
+            <div class="collapse nav-collapse pull-right">
+              <ul class="nav">
+                <li><a href="products-single.html">Home</a></li>
+                <li class="active"><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="" data-toggle="modal" data-target="#modal-contact-form">Contact Us</a></li>
+              </ul>
+              <form action="" class="navbar-search">
+                <input type="text" class="search-query" placeholder="search...">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div><!-- END NAVBAR -->
+      
+    
+      <div class="container">
+      <!-- PAGE HEADER --> 
+      <section>
+        <ul class="breadcrumb">
+          <li><a href="#">Home</a><span class="divider"></span></li>
+          <li class="active">Products</li>
+        </ul>
+        <div class="page-header">
+          <h1>Products. <small>We build amazing stuff.</small></h1>
+        </div>
+      </section>
+      
+      <!-- PAGE CONTENT -->
+      <section>
+        <h4>Product Name</h4>
+        <div class="row">
+          <div class="span6">
+            <p class="muted">A single montage or collage of photographic images, with text or other additions. </p>
+          </div>
+          <div class="span6">
+            <div class="btn-group pull-right">
+              <a href="" class="btn btn-info  buttonL">Listen Now</a>
+              <a href="" class="btn ">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="carousel slide" id="product-carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#product-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#product-carousel" data-slide-to="1"></li>
+            <li data-target="#product-carousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="img/walks.jpg" alt="Walks">
+              <div class="carousel-caption">
+                <h4>A nice image</h4>
+                <p>The Image description.</p>
+              </div>
+            </div>
+             <div class="item">
+              <img src="img/classic.jpg" alt="Class">
+              <div class="carousel-caption">
+                <h4>A nice image</h4>
+                <p>The image description 2.</p>
+              </div>
+            </div>
+             <div class="item">
+              <img src="img/elvis.jpg" alt="Elvis">
+              <div class="carousel-caption">
+                <h4>A nice image</h4>
+                <p>The image description 3.</p>
+              </div>
+            </div>
+          </div> 
+          <a href="#product-carousel" class="carousel-control left" data-slide="prev">&lsaquo;</a>
+          <a href="#product-carousel" class="carousel-control right" data-slide="next">&rsaquo;</a>     
+        </div>
+      </section>
+
+      <!-- Q & A -->
+      <section>
+        <div class="row">
+          <div class="span6">
+            <h4>Product Q&A</h4>
+            <div class="accordion" id="product-qa">
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a href="#collapse-1" data-parent="#product-qa" data-toggle="collapse" class="accordion-toggle">Question 1</a>
+                </div>
+                <div class="accordion-body collapse" id="collapse-1">
+                  <div class="accordion-inner">
+                    This is answer 1.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a href="#collapse-2" data-parent="#product-qa" data-toggle="collapse" class="accordion-toggle">Question 2</a>
+                </div>
+                <div class="accordion-body collapse" id="collapse-2">
+                  <div class="accordion-inner">
+                    This is answer 2.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a href="#collapse-3" data-parent="#product-qa" data-toggle="collapse" class="accordion-toggle">Question 3</a>
+                </div>
+                <div class="accordion-body collapse" id="collapse-3">
+                  <div class="accordion-inner">
+                    This is answer 3.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="span6">
+              <h4>Product Testimoniols</h4>
+              <blockquote>
+                <p>This is a testimoniol.</p>
+                <small>John</small>
+              </blockquote>
+              <hr />
+               <blockquote>
+                <p>This is a testimoniol.</p>
+                <small>John</small>
+              </blockquote>
+              <hr />
+               <blockquote>
+                <p>This is a testimoniol.</p>
+                <small>John</small>
+              </blockquote>
+            </div>
+        </div>
+        <hr />
+        <ul class="pager">
+          <li class="previous"><a href="#">&larr; Previous</a></li>
+          <li class="next"><a href="#">Next &rarr;</a></li>
+        </ul>
+      </section>
+
+      <!-- FOOTER -->
+      <section>
+        <hr />
+        <p class="lead text-center">Wanna get in touch? Email as at <a href="">sheva2786@rambler.ru</a></p>
+      </section>
+      <hr />
+      <ul class="inline text-center">
+        <li><strong>Follow As On</strong></li>
+        <li><a href="">Twitter</a></li>
+        <li><a href="">Facebook</a></li>
+        <li><a href="">Vcontakte</a></li>
+      </ul>
+      <p class="text-center muted">&copy; Copyright 2013 Company Name</p>
+    </div>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+      $ (document) .ready (function(){
+          $ ('.carousel') .carousel ({
+                interval:5000
+          });  
+      });         
+    </script>
+  </body>
+</html>
